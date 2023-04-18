@@ -64,6 +64,12 @@ section.form {
             padding-bottom: 40px;
         }
 
+        .validationError {
+            display: none;
+            color: $danger;
+            font-weight: 300;
+        }
+
         .form-group {
             label {
                 font-size: 1.5rem;
@@ -89,6 +95,11 @@ section.form {
                     font-weight: 300;
                     color: $white;
                     opacity: 0.75;
+                }
+
+                &:focus {
+                    outline: none;
+                    box-shadow: none;
                 }
 
                 @include media-breakpoint-down(sm) {
